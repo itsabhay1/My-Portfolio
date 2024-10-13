@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 2, 21);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    background-color: rgb(4, 4, 39);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(109, 45, 169);
+    font-size: 1.04rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firsts {
+    display: flex;
+    justify-content: space-around;
+    margin: 170px 0px;
+
+}
+
+.firsts>div {
+    width: 30%;
+}
+
+.lefts {
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.lefts span {
+    color: #4114b1;
+    font-size: 2.2rem;
+}
+
+.hi {
+    font-size: 1.6rem;
+}
+
+.rights .imgBox {
+    width: 24vw;
+    height: 24vw;
+    background: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.rights .imgBox .imgItem {
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.rights .imgBox .imgItem img {
+    position: absolute;
+    top: 10px;
+    right: 21px;
+    width: 100%;
+    height: 108%;
+    object-fit: cover;
+}
+
+main hr {
+
+    border: 0;
+    height: 2.2px;
+    background: rgb(35 28 102);
+    margin: 40px 0;
+}
+
+.seconds {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.seconds {
+    font-size: 1.9rem;
+    height: fit-content;
+}
+
+.row {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.secTitle {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+.aboutText {
+    flex: 6%;
+    max-width: 60%;
+}
+
+.aboutText h3 {
+    font-size: 24px;
+    margin: 70px 0 15px 0px;
+    font-weight: 700;
+
+}
+
+.aboutText p {
+    font-size: 18px;
+}
+
+.skillBar {
+    width: 500px;
+    margin: 38px -7px 0px 135px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 28px rgba(123, 30, 30, 0.732), 0 10px 10px rgba(135, 42, 42, 0.22);
+}
+
+.skillBar>h3 {
+    margin-bottom: 17px;
+    text-align: center;/
+}
+
+.skillBar li {
+    margin: 4px 0;
+    padding: 10px;
+    list-style: none;
+    font-size: 25px !important;
+}
+
+.bar {
+    display: blocks;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(144, 24, 24, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html {
+    width: 90%;
+    animation: html 3s;
+}
+
+.CSS {
+    width: 80%;
+    animation: CSS 3s;
+}
+
+.Javascript {
+    width: 20%;
+    animation: Javascript 3s;
+}
+
+.Ccp {
+    width: 90%;
+    animation: Ccp 3s;
+}
+
+.MySQL {
+    width: 75%;
+    animation: MySQL 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes CSS {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes Javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes Ccp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes MySQL {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 41%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.container:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.container:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.container:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.textBox {
+    padding: 20px 30px;
+    background: #4114b1;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.logo {
+    width: 2vw;
+    height: 2vw;
+    background: #4114b1;
+    border-radius: 50%;
+    position: absolute;
+    right: -73px;
+    top: 32px;
+    z-index: 10;
+}
+
+.rightContainer .logo {
+    left: -65px;
+}
+
+.leftContainer {
+    left: 0;
+}
+
+.rightContainer {
+    left: 50%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 4s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.textBox h2 {
+    font-weight: 600;
+}
+
+.textBox small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.leftarrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #4114b1;
+    right: -15px;
+}
+
+.rightarrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #4114b1;
+    left: -15px;
+}
+
+.item {
+    margin: auto;
+    max-width: 40vw;
+    padding: 23px;
+    border: none;
+    border-radius: 12px;
+    background-color: #000016;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 1px 28px rgb(47 0 108 / 73%), 0 10px 10px rgb(56 0 255 / 22%);
+}
+
+.netimg img {
+    width: -webkit-fill-available;
+
+}
+
+.btngreen a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 4px 13px 4px;
+    font-size: 15px;
+}
+
+.row {
+    padding: 8px 0px 36px 79px;
+}
+
+.contactLeft {
+    flex-basis: 35%;
+}
+
+.contactRight {
+    flex-basis: 60%;
+}
+
+.contactLeft p {
+    margin-top: 30px;
+}
+
+.contactLeft p i {
+    color: red;
+    margin-right: 15px;
+    font-size: 25px
+}
+
+.socialicons {
+    margin-top: 30px;
+}
+
+.socialicons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 26px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.socialicons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #262626;
+    color: #fff;
+}
+
+.contactRight form {
+    width: 54%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262625;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn {
+    padding: 5px 28px;
+    font-size: 21px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1289px) {
+    .timeline {
+        margin: 50px auto;
+        ;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 83%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .textBox {
+        font-size: 13px;
+    }
+
+    .textBox small {
+        margin-bottom: 10px;
+    }
+
+    .rightContainer {
+        left: 0;
+    }
+
+    .leftContainer .logo, .rightContainer .logo {
+        left: -60px;
+    }
+
+    .leftarrow, .rightarrow {
+        border-right: 15px solid #4114b1;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .left{
+        font-size: 13px;
+    }
+    .right{
+        font-size: 12px;
+    }
+    .firsts {
+        width: max-content;
+        flex-direction: column-reverse;
+        margin-left: 215px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutText{
+        max-width: 98%;
+    }
+    .skillBar{
+        margin-left: -41px;
+        width: 383px;
+    }
+    .logo{
+        width: 17px;
+        height: 17px;
+    }
+    .item{
+        margin-top: 37px;
+    }
+    form input, form textarea {
+    width: 152%;
+    }
+}
