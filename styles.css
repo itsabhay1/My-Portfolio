@@ -103,6 +103,22 @@ main hr {
     background: rgb(35 28 102);
     margin: 40px 0;
 }
+.btn-resume {
+    background-color:#4114b1;
+    color: white;
+    padding: 10px 20px;
+    text-align: center; 
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+    background-color: #4800ff;
+}
 
 .seconds {
     max-width: 80vw;
@@ -527,10 +543,27 @@ form .btn {
     .right{
         font-size: 12px;
     }
+    header{
+        width: fit-content;
+    }
+    main{
+        width: fit-content;
+    }
     .firsts {
-        width: max-content;
+        width: 504px;
         flex-direction: column-reverse;
-        margin-left: 215px;
+        /* margin-left: 215px; */
+        align-items:center;
+    }
+    .rights .imgBox {
+        width: 58vw;
+        height: 58vw;
+    }
+    .firsts div{
+        width: 88%;
+    }
+    .name{
+        width: auto !important;
     }
 
     .row{
